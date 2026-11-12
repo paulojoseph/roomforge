@@ -1,0 +1,16 @@
+{
+  "meta": {"name": "l-room", "units": "mm"},
+  "walls": [
+    {"id": "w-001", "start": {"x": 0, "y": 0}, "end": {"x": 6000, "y": 0}, "thickness": 150, "height": 2700},
+    {"id": "w-002", "start": {"x": 6000, "y": 0}, "end": {"x": 6000, "y": 2500}, "thickness": 150, "height": 2700},
+    {"id": "w-003", "start": {"x": 6000, "y": 2500}, "end": {"x": 3000, "y": 2500}, "thickness": 150, "height": 2700},
+    {"id": "w-004", "start": {"x": 3000, "y": 2500}, "end": {"x": 3000, "y": 5000}, "thickness": 150, "height": 2700},
+    {"id": "w-005", "start": {"x": 3000, "y": 5000}, "end": {"x": 0, "y": 5000}, "thickness": 150, "height": 2700},
+    {"id": "w-006", "start": {"x": 0, "y": 5000}, "end": {"x": 0, "y": 0}, "thickness": 150, "height": 2700}
+  ],
+  "openings": [
+    {"id": "o-001", "wallId": "w-001", "kind": "door", "offset": 600, "width": 900, "height": 2100, "sill": 0},
+    {"id": "o-002", "wallId": "w-002", "kind": "window", "offset": 700, "width": 1200, "height": 1200, "sill": 900},
+    {"id": "o-003", "wallId": "w-005", "kind": "window", "offset": 900, "width": 1200, "height": 1200, "sill": 900}
+  ]
+}

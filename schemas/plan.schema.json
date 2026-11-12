@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "roomforge plan",
+  "description": "A floor plan. All lengths are integer millimetres.",
+  "type": "object",
+  "required": ["meta", "walls", "openings"],
+  "additionalProperties": false,
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["name", "units"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "units": { "enum": ["mm", "cm", "m"], "description": "How lengths are shown. Stored lengths are always millimetres." }
+      }
+    },
+    "walls": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "start", "end", "thickness", "height"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^w-[0-9]{3,}$" },
+          "start": { "$ref": "#/$defs/point" },
+          "end": { "$ref": "#/$defs/point" },
+          "thickness": { "type": "integer", "minimum": 40, "maximum": 600 },
+          "height": { "type": "integer", "minimum": 1000, "maximum": 6000 }
+        }
+      }
+    },
+    "openings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "wallId", "kind", "offset", "width", "height", "sill"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^o-[0-9]{3,}$" },
+          "wallId": { "type": "string" },
+          "kind": { "enum": ["door", "window"] },
+          "offset": { "type": "integer", "description": "mm from the wall start to the near edge of the opening" },
+          "width": { "type": "integer", "minimum": 300, "maximum": 4000 },
+          "height": { "type": "integer", "minimum": 400, "maximum": 3000 },
+          "sill": { "type": "integer", "minimum": 0, "maximum": 2000 }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "point": {
+      "type": "object",
+      "required": ["x", "y"],
+      "additionalProperties": false,
+      "properties": {
+        "x": { "type": "integer" },
+        "y": { "type": "integer" }
+      }
+    }
+  }
+}

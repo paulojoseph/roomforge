@@ -1,0 +1,11 @@
+{
+  "note": "areas checked against the architect's drawing",
+  "areaDefinition": "inner face of the walls, square metres",
+  "rooms": [
+    {"id": "room-01", "label": "Living", "areaM2": "19.11"},
+    {"id": "room-02", "label": "Kitchen", "areaM2": "11.31"},
+    {"id": "room-03", "label": "Bedroom 1", "areaM2": "13.26"},
+    {"id": "room-04", "label": "Bedroom 2", "areaM2": "10.54"},
+    {"id": "room-05", "label": "Bath", "areaM2": "4.32"}
+  ]
+}

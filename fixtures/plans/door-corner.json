@@ -1,0 +1,13 @@
+{
+  "meta": {"name": "door-corner", "units": "mm"},
+  "walls": [
+    {"id": "w-001", "start": {"x": 0, "y": 0}, "end": {"x": 4000, "y": 0}, "thickness": 150, "height": 2700},
+    {"id": "w-002", "start": {"x": 4000, "y": 0}, "end": {"x": 4000, "y": 3000}, "thickness": 150, "height": 2700},
+    {"id": "w-003", "start": {"x": 4000, "y": 3000}, "end": {"x": 0, "y": 3000}, "thickness": 150, "height": 2700},
+    {"id": "w-004", "start": {"x": 0, "y": 3000}, "end": {"x": 0, "y": 0}, "thickness": 150, "height": 2700}
+  ],
+  "openings": [
+    {"id": "o-001", "wallId": "w-001", "kind": "door", "offset": 50, "width": 900, "height": 2100, "sill": 0},
+    {"id": "o-002", "wallId": "w-002", "kind": "window", "offset": 900, "width": 1200, "height": 1200, "sill": 900}
+  ]
+}

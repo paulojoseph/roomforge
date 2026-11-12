@@ -1,0 +1,37 @@
+{
+  "meta": {"name": "apartment-2br", "units": "mm"},
+  "walls": [
+    {"id": "w-001", "start": {"x": 0, "y": 0}, "end": {"x": 5000, "y": 0}, "thickness": 100, "height": 2700},
+    {"id": "w-002", "start": {"x": 5000, "y": 0}, "end": {"x": 5000, "y": 4000}, "thickness": 100, "height": 2700},
+    {"id": "w-003", "start": {"x": 5000, "y": 4000}, "end": {"x": 0, "y": 4000}, "thickness": 100, "height": 2700},
+    {"id": "w-004", "start": {"x": 0, "y": 4000}, "end": {"x": 0, "y": 0}, "thickness": 100, "height": 2700},
+    {"id": "w-005", "start": {"x": 5100, "y": 0}, "end": {"x": 8100, "y": 0}, "thickness": 100, "height": 2700},
+    {"id": "w-006", "start": {"x": 8100, "y": 0}, "end": {"x": 8100, "y": 4000}, "thickness": 100, "height": 2700},
+    {"id": "w-007", "start": {"x": 8100, "y": 4000}, "end": {"x": 5100, "y": 4000}, "thickness": 100, "height": 2700},
+    {"id": "w-008", "start": {"x": 5100, "y": 4000}, "end": {"x": 5100, "y": 0}, "thickness": 100, "height": 2700},
+    {"id": "w-009", "start": {"x": 0, "y": 4100}, "end": {"x": 4000, "y": 4100}, "thickness": 100, "height": 2700},
+    {"id": "w-010", "start": {"x": 4000, "y": 4100}, "end": {"x": 4000, "y": 7600}, "thickness": 100, "height": 2700},
+    {"id": "w-011", "start": {"x": 4000, "y": 7600}, "end": {"x": 0, "y": 7600}, "thickness": 100, "height": 2700},
+    {"id": "w-012", "start": {"x": 0, "y": 7600}, "end": {"x": 0, "y": 4100}, "thickness": 100, "height": 2700},
+    {"id": "w-013", "start": {"x": 4100, "y": 4100}, "end": {"x": 7300, "y": 4100}, "thickness": 100, "height": 2700},
+    {"id": "w-014", "start": {"x": 7300, "y": 4100}, "end": {"x": 7300, "y": 7600}, "thickness": 100, "height": 2700},
+    {"id": "w-015", "start": {"x": 7300, "y": 7600}, "end": {"x": 4100, "y": 7600}, "thickness": 100, "height": 2700},
+    {"id": "w-016", "start": {"x": 4100, "y": 7600}, "end": {"x": 4100, "y": 4100}, "thickness": 100, "height": 2700},
+    {"id": "w-017", "start": {"x": 7375, "y": 4075}, "end": {"x": 9175, "y": 4075}, "thickness": 50, "height": 2700},
+    {"id": "w-018", "start": {"x": 9175, "y": 4075}, "end": {"x": 9175, "y": 6475}, "thickness": 50, "height": 2700},
+    {"id": "w-019", "start": {"x": 9175, "y": 6475}, "end": {"x": 7375, "y": 6475}, "thickness": 50, "height": 2700},
+    {"id": "w-020", "start": {"x": 7375, "y": 6475}, "end": {"x": 7375, "y": 4075}, "thickness": 50, "height": 2700}
+  ],
+  "openings": [
+    {"id": "o-001", "wallId": "w-001", "kind": "door", "offset": 800, "width": 900, "height": 2100, "sill": 0},
+    {"id": "o-002", "wallId": "w-004", "kind": "window", "offset": 1200, "width": 1800, "height": 1400, "sill": 800},
+    {"id": "o-003", "wallId": "w-005", "kind": "window", "offset": 800, "width": 1200, "height": 1200, "sill": 900},
+    {"id": "o-004", "wallId": "w-008", "kind": "door", "offset": 1500, "width": 900, "height": 2100, "sill": 0},
+    {"id": "o-005", "wallId": "w-009", "kind": "door", "offset": 2500, "width": 800, "height": 2100, "sill": 0},
+    {"id": "o-006", "wallId": "w-011", "kind": "window", "offset": 1000, "width": 1500, "height": 1300, "sill": 900},
+    {"id": "o-007", "wallId": "w-013", "kind": "door", "offset": 400, "width": 800, "height": 2100, "sill": 0},
+    {"id": "o-008", "wallId": "w-015", "kind": "window", "offset": 800, "width": 1400, "height": 1300, "sill": 900},
+    {"id": "o-009", "wallId": "w-017", "kind": "door", "offset": 300, "width": 700, "height": 2100, "sill": 0},
+    {"id": "o-010", "wallId": "w-019", "kind": "window", "offset": 500, "width": 600, "height": 600, "sill": 1400}
+  ]
+}
