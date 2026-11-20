@@ -19,10 +19,7 @@ Version 0.4.2, MIT license.
 - Quantities in the sidebar (wall length and surface, doors and windows) and a few hints, for example a door
   narrower than 800 mm.
 - A command line tool with the same logic, so a plan can be checked in a terminal or in CI.
-- Export to binary glTF. Exports open in Blender and every glTF viewer.
-- Performance that keeps up with big plans: 60 fps with 2,000 walls on WebGPU.
-- Room detection handles any plan you can draw.
-- Test coverage of 90%.
+- Export to binary glTF.
 
 ## Quick start
 
